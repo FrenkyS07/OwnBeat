@@ -85,3 +85,37 @@ body {
 .playMusic {
     color: white;
 }
+
+.songList {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    border-bottom: #000 4px solid;
+}
+
+.songCover {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    transition: scale 0.5s, rotate 0.9s;
+}
+
+.songCover:hover {
+    scale: calc(1.1);
+    rotate: calc(360deg);
+}
+
+.songInfo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.songDuration {
+    text-align: right;
+}
