@@ -21,9 +21,10 @@ buttonLink.addEventListener('click', async function () {
                     const rawDuration = videoInfo.contentDetails.duration;
                     const cleanDuration = formatDuration(rawDuration);
                     boxMusic.style.display = "block";
+
                     const newSong = `
                     <div class="songList">
-                    <img src="${tumbnail}" class="songCover" "alt=songCover">
+                    <img src="${tumbnail}" class="songCover" alt="songCover">
                     <div class="songInfo">
                             <span class="songTitle">${judulLagu}</span>
                             <span class="songDuration">${cleanDuration}</span>
@@ -36,7 +37,7 @@ buttonLink.addEventListener('click', async function () {
                 } else {
                     alert('Gagal ditambahkan!');
                 }
-            }catch(error){
+            } catch (error) {
                 console.error('Gagal mengambil APi', error);
             }
         } else {

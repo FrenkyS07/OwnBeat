@@ -91,6 +91,7 @@ body {
     padding: 0.3rem;
     border-bottom: #000 4px solid;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .songList:hover{
