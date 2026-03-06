@@ -5,9 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to left,
-            #23dc42 0%,
-            #1a1a1a 100%);
+    background-color: #eef0f2;
 }
 
 .searchContainer {
@@ -18,7 +16,6 @@ body {
 }
 
 .search input {
-    border: none;
     border-radius: 10px;
     width: 600px;
     height: 40px;
@@ -56,16 +53,17 @@ body {
 
 
 .boxMusic {
-    display: none; 
-    background: linear-gradient(to left, #000 0%, #35AD93 100%);
-    width: 1230px;
+    display: none;
+    background-color: #64b5f6;
+    width: 2300px;
     margin: 2rem;
     padding: 0.5rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-shadow: 1px 3px 5px 2px #1a1a1a;
 }
 
-/* ============================== */
+/* ======================================= */
 
 .btmContainer {
     background: linear-gradient(to left,#1a1a1a 0%, #23dc42 100%);
@@ -92,6 +90,11 @@ body {
     align-items: center;
     padding: 0.3rem;
     border-bottom: #000 4px solid;
+    transition: all 0.5s;
+}
+
+.songList:hover{
+    transform: scale(1.02);
 }
 
 .songCover {
