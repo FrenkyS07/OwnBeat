@@ -7,7 +7,6 @@ buttonLink.addEventListener('click', async function () {
 
     if (inputLink) {
         const checkId = extractYouTubeID(inputLink);
-
         if (checkId) {
             try {
                 const apiUrl = `https://www.googleapis.com/youtube/v3/videos?id=${checkId}&part=snippet,contentDetails&key=${apiKey}`;
@@ -21,7 +20,7 @@ buttonLink.addEventListener('click', async function () {
                     const tumbnail = `https://img.youtube.com/vi/${checkId}/hqdefault.jpg`;
                     const rawDuration = videoInfo.contentDetails.duration;
                     const cleanDuration = formatDuration(rawDuration);
-
+                    boxMusic.style.display = "block";
                     const newSong = `
                     <div class="songList">
                     <img src="${tumbnail}" class="songCover" "alt=songCover">
